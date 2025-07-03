@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>Modern Music Player</title>
+  </head>
+  <body>
+    <h2>Web nghe nhạc</h2>
+    <div class="container">
+      <div class="image-header">
+        <img
+          id="song-image"
+          class="rotating"
+          src="../image/images (5).jpg"
+          alt="Lạc Trôi - Sơn Tùng M-TP"
+        />
+      </div>
+      <div class="controls">
+        <button onclick="previousSong()">
+          <i class="fa-solid fa-backward"></i>
+        </button>
+        <button id="toggleButton" onclick="togglePlayPause()">
+          <i class="fa-solid fa-play"></i>
+        </button>
+        <button onclick="nextSong()">
+          <i class="fa-solid fa-forward"></i>
+        </button>
+      </div>
+      <div class="bar">
+        <div class="bar-progress"></div>
+      </div>
+      <div class="list-music">
+        <ul class="music-list">
+          <li data-src="../music/song1.mp3" data-img="../image/images (5).jpg">
+            <img src="../image/images (5).jpg" alt="Lạc Trôi" />
+            <span>Lạc Trôi - Sơn Tùng M-TP</span>
+          </li>
+          <li data-src="../music/song2.mp3" data-img="../image/images (6).jpg">
+            <img src="../image/images (6).jpg" alt="Nơi Này Có Anh" />
+            <span>Nơi Này Có Anh - Sơn Tùng M-TP</span>
+          </li>
+          <li
+            data-src="../music/song3.mp3"
+            data-img="../image/ngang-1749778781557-17497787836531803059463.webp"
+          >
+            <img
+              src="../image/ngang-1749778781557-17497787836531803059463.webp"
+              alt="Em Gái Mưa"
+            />
+            <span>Em Gái Mưa - Hương Tràm</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <audio id="audio" src="../music/song1.mp3"></audio>
+    <script src="../js/script.js"></script>
+  </body>
+</html>
